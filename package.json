@@ -1,0 +1,47 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "test": "node_modules/.bin/mocha --require test/bootstrap/node test/*.test.js",
+    "testmocha": "mocha --timeout 10000"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.15.3",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.15.0",
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "cors": "^2.7.1",
+    "express": "^4.13.4",
+    "fs": "0.0.1-security",
+    "jwt-simple": "^0.5.0",
+    "lodash": "^4.17.4",
+    "mocha": "^3.2.0",
+    "mongoose": "^4.4.7",
+    "mongoose-double": "0.0.1",
+    "morgan": "^1.7.0",
+    "nodemon": "^1.9.1",
+    "passport": "^0.3.2",
+    "passport-jwt": "^2.0.0",
+    "passport-local": "^1.0.0"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "engines": {
+    "node": "6.9.5"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "mocha": "^3.2.0"
+  }
+}
